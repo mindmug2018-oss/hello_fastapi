@@ -19,7 +19,8 @@ jobs:
           port: 22
           script: |
             cd ~/hello_fastapi
-            git pull origin master
+            git fetch origin main
+            git reset --hard origin/main
             source venv/bin/activate
             pip install --upgrade pip
             pip install -r requirements.txt
