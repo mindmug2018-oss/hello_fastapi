@@ -19,6 +19,7 @@ jobs:
           port: 22
           script: |
             cd ~/hello_fastapi
+            sudo systemctl restart my_fastapi_app
             git pull origin master
             source venv/bin/activate
             pip install --upgrade pip
