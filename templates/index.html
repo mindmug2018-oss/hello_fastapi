@@ -17,6 +17,10 @@
             <li>Please wait a bit</li>
             <li>Blah...Blah...</li>
             <li>Checking again</li>
+            
+            {% for item in noticelist %}
+            <li>{{ item.content }}</li>
+            {% endfor %}
         </ul>
     </div>
 </body>
