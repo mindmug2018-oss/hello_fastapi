@@ -25,3 +25,4 @@ jobs:
             pip install -r requirements.txt
             fuser -k 8000/tcp || true
             nohup python3 -m uvicorn main:app --host 0.0.0.0 --port 8000 > app.log 2>&1 &
+            sleep 2
