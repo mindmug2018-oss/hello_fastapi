@@ -1,0 +1,22 @@
+# app01/.github/workflows/deploy.yml
+
+name: fastapi 를 aws linux에 배포하기
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ssh 원격 명령
+        uses: appleboy/ssh-action@master
+        with:
+          host: xxx
+          username: xxx
+          key: xxx
+          port: 22
+          script: |
+            cd ~/xxx/xxx
+            git pull
