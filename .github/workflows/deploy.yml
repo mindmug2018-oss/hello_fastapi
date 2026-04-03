@@ -4,7 +4,7 @@ name: fastapi 를 aws linux에 배포하기
 
 on:
   push:
-    branches: ["main"] # master 브렌치에 puth 될때 아래의 job 을 실행해라 라는 의미
+    branches: ["master"] # master 브렌치에 puth 될때 아래의 job 을 실행해라 라는 의미
 
 jobs:
   deploy:
